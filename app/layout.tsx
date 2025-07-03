@@ -1,20 +1,22 @@
-import type { Metadata } from 'next'
-import './globals.css'
+import type { Metadata } from "next";
+import "../app/globals.css";
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.dev',
-}
+  title: "Apex Академи",
+  description: "Монголын тэргүүлэгч онлайн академи",
+  generator: "v0.dev",
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="mn">
+      <body>
+        <main className=" min-h-screen">{children}</main>
+      </body>
     </html>
-  )
+  );
 }
